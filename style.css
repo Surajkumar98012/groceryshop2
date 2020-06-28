@@ -1,0 +1,94 @@
+body{
+	margin: 0;
+	padding: 0;
+
+}
+
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position:absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:purple;
+  opacity: 0.95;
+  overflow-x: hidden;
+  transition: 0.5s;
+  margin-top: 60px;
+  padding-top: 50px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding-top: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+.a{
+	position: relative;
+}
+.a img{
+	transition: .3s;
+}
+.a:hover img{
+	filter: blur(2px) brightness(60%);
+	box-shadow: 0 0 16px cyan;
+}
+.a :not(img){
+  position: absolute;
+  top: 45%;
+  left: 33%;
+  z-index: 1;
+  color: white;
+  opacity: 0;
+  transition: .3s;
+}
+.a:hover :not(img){
+	opacity: 1;
+}
+/*.a a{
+/*	left: 43%;
+	top:58%;*/
+	/*vertical-align: center;*/
+
+/*position: absolute;*/
+/*}*/
+
+#pop1{
+	position: absolute;
+	top: -24px;
+	left:-21px;
+	width: 140px;
+	opacity: 85%;
+}

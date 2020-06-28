@@ -1,0 +1,494 @@
+<DOCTYPE! html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My shop</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+   /* width: 100%;
+    height: 100%;*/
+  }
+  </style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Grocery Shop</a>
+  <a href="#">Cosmetic Shop</a>
+  <a href="#">Stationary Shop</a>
+  <a href="#">Medical Shop</a>
+</div>
+
+<div id="main">
+
+ 
+
+
+
+
+
+
+          
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:indigo;margin-top: -10px;opacity: 0.80" >
+         <div class="col-md-1" ></div>
+          <a style="font-size: 28px;font-weight: bold;" class="navbar-brand" href="#" ><span style="color: violet;"> Ow</span><span style="color: yellow;">ns</span><span style="color: orange;">hop</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+       
+    
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" style="padding-top: 8px;">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a style="color: white" class="nav-link" href="#">Get the app <!-- <span class="sr-only">(current)</span> --></a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Support
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Feedback</a>
+          <a class="dropdown-item" href="#">Helpcenter</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Message Us</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <!-- <a href="#">Disabled</a> -->
+        <a class="nav-link disabled"  href="#"><span style="border:1px solid red;padding: 8px;color: red;"> Sign in </span></a>
+      </li>
+          <button type="button" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#myModal">Sign Up</button>
+    </ul>
+    
+  </div>
+ 
+
+
+</nav>
+
+   
+       <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h5 class="modal-title" style="color: red;">Create Your Account</h5>
+          
+      
+        </div>
+        <h6>Set up an account today and start receiving exclusive deals and discounts reserved only for you!<h6>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div style="border:1px solid black;padding-top: 10px;">
+                    <img  class="img-fluid" src="1.png">
+                    <p style="margin-top: -20px; text-align: center;"> Sign in with Google</p>
+            </div>
+            <br/>
+            <div style="border:1px solid black;padding-top: 10px;background-color: rgb(59,89,152);">
+                    <img  class="img-fluid" src="2.png">
+                    <p style="margin-top: -20px;padding-left: 10px; color: white;text-align: center;"> Sign in with Facebook</p>
+            </div>
+              </div>
+              <hr>
+              <h6 style="text-align: center;color: grey;">or register with E-mail:</h6>
+            
+                <form action="/action_page.php">
+                    <div class="form-group">
+    
+      <input type="email" class="form-control" id="name" placeholder="Enter First Name" name="Firstname">
+    </div>
+      <div class="form-group">
+    
+      <input type="email" class="form-control" id="name" placeholder="Enter Last Name" name="Lastname">
+    </div>
+    <div class="form-group">
+    
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+    
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+     <div class="form-group">
+    
+      <input type="password" class="form-control" id="pwd" placeholder="Confirm password" name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button style="margin-left: 40px;" type="submit" class="btn btn-success">Create Account</button>
+  </form>
+         </div>
+
+         <div class="col-md-6"style="background-image: url(1.jpg);padding-top: 120px;">
+          <img style="margin-left: 100px;" src="3.png">
+          <h4 style="text-align: center;font-weight: bold;">Signed-in<br> Member Get Excess To:</h4>
+          <br>
+          <ul style="font-weight: bold;">
+            <li>Thousands of Member-only deals</li>
+            <br>
+            <li>Lower prices</li>
+            <br>
+            <li>Faster Delivery</li>
+            <br>
+            <li>Amazing Offers</li>
+            <br>
+            <li>Upconing Deals</li>
+          </ul>
+         </div>
+            
+          </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <h6 style="text-align: center;">By proceeding, you agree to our Terms of Use and confirm you have read our Privacy and Cookie Statement.</h6>
+         <!--  <button style="align-items: center;" type="button" class="btn btn-danger" data-dismiss="modal">Close</button> -->
+        </div>
+          
+          </div>
+         </div>
+        </div>
+
+
+
+
+ 
+  <span style="font-size:24px;cursor:pointer; color: brown;" onclick="openNav()">&#9776;Category</span>
+
+ 
+
+
+
+
+
+
+
+<br>
+	<!-- <h1 class="text-center font-weight-bold">Own shop</h1> -->
+ <div class="container">
+<div id="demo" class="carousel slide carousel-fade" data-ride="carousel" style="box-shadow: 0 0 13px; border-radius: 15px;">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+    <li data-target="#demo" data-slide-to="4"></li>
+    <li data-target="#demo" data-slide-to="5"></li>
+    <li data-target="#demo" data-slide-to="6"></li>
+    <li data-target="#demo" data-slide-to="7"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="1.webp" alt="Los Angeles" width="100%" height="500" style="border-radius: 15px;">
+      <div class="carousel-caption">
+        <h2 style="color: black;">our shop</h2>
+        <h4 class="font-weight-bold" style="color: black;"> Thanku for watching</h4>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="4.jpg" alt="Chicago" width="100%" height="500" style="border-radius: 15px;">
+      <div class="carousel-caption">
+        <h2 >HEllo</h2>
+        <h4 class="font-weight-bold" >Thank you for watching</h4>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="3.jpg" alt="Chicago" width="100%" height="500" style="border-radius: 15px;">
+      <div class="carousel-caption">
+        <h2 >HEllo</h2>
+        <h4 class="font-weight-bold" >Thank you for watching</h4>
+      </div>   
+    </div><div class="carousel-item">
+      <img src="image2.jpeg" alt="Chicago" width="100%" height="500" style="border-radius: 15px;">
+      <div class="carousel-caption">
+        <h2 >HEllo</h2>
+        <h4 class="font-weight-bold" >Thank you for watching</h4>
+      </div>   
+    </div><div class="carousel-item">
+      <img src="a.jpg" alt="Chicago" width="100%" height="500" style="border-radius: 15px;">
+      <div class="carousel-caption">
+        <h2 >HEllo</h2>
+        <h4 class="font-weight-bold" >Thank you for watching</h4>
+      </div>   
+    </div><div class="carousel-item">
+      <img src="5.jpg" alt="Chicago" width="100%" height="500" style="border-radius: 15px;">
+      <div class="carousel-caption">
+        <h2 >HEllo</h2>
+        <h4 class="font-weight-bold" >Thank you for watching</h4>
+      </div>   
+    </div><div class="carousel-item">
+      <img src="image1.jpeg" alt="Chicago" width="100%" height="500" style="border-radius: 15px;">
+      <div class="carousel-caption">
+        <h2 >HEllo</h2>
+        <h4 class="font-weight-bold" >Thank you for watching</h4>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="image3.jpeg" alt="New York" width="100%" height="500" style="border-radius: 15px;">
+      <div class="carousel-caption">
+        <h2 style="color: black;">HEllo</h2>
+        <h4 class="font-weight-bold" style="color: black;">thanks for watching</h4>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+
+
+
+
+<br>
+<div class="container">
+  <div class="row">
+    <div class="container col-lg-6 col-md-6 col-sm-6 col-12  mb-4 a" >
+     
+      <img src="image3.jpeg" class="img-fluid" style="box-shadow: 0 0 13px;border-radius: 7px;">
+       <!-- <h2>50%-60% OFF</h2> -->
+      
+<!--        <a href="#"><button class="btn btn-primary">Shop</button></a> -->
+       
+  
+</div>
+      <div class="container col-lg-6 col-md-6 col-sm-6 col-12 mb-4 a"  >
+       
+        <img src="image3.jpeg" class="img-fluid" style="box-shadow: 0 0 13px; border-radius: 7px;">
+   <!--    <h2>UPTO 70% OFF</h2>
+       <a href="#"><button class="btn btn-primary">Shop</button></a> -->
+      </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="container col-lg-3 col-md-3 col-sm-6 col-6 mb-4 ">
+    
+      <img src="image3.jpeg" class="img-fluid" style="border-radius: 7px;box-shadow: 0 0 13px;">
+    </div>
+    <div class="container col-lg-3 col-md-3 col-sm-6 col-6 mb-4">
+        <img src="image3.jpeg" class="img-fluid" style="border-radius: 7px;box-shadow: 0 0 13px;">
+    </div>
+    <div class="container col-lg-3 col-md-3 col-sm-6 col-6 mb-4">
+        <img src="image3.jpeg" class="img-fluid" style="border-radius: 7px;box-shadow: 0 0 13px;">
+    </div>
+    <div class="container col-lg-3 col-md-3 col-sm-6 col-6 mb-4">
+        <img src="image3.jpeg" class="img-fluid" style="border-radius: 7px;box-shadow: 0 0 13px;">
+    </div>
+  </div>
+</div>
+<br>
+<h3 class="text-center font-weight-bold" style="text-shadow: 0 0 5px;">Coming Soon</h3>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="container col-lg-4 col-md-4 col-sm-12 col-12 mb-4">
+      <div id="pop1"><img src="comi3.png" class="img-fluid"></div>
+        <img src="image3.jpeg" class="img-fluid" style="border-radius: 7px;box-shadow: 0 0 13px;">
+    </div>
+     <div class="container col-lg-4 col-md-4 col-sm-6 col-6 mb-4">
+         <div id="pop1"><img src="comi3.png" class="img-fluid"></div>
+         <img src="image3.jpeg" class="img-fluid" style="border-radius: 7px;box-shadow: 0 0 13px;">
+     </div>
+      <div class="container col-lg-4 col-md-4 col-sm-6 col-6 mb-4 maicontainer">
+          <div id="pop1"><img src="comi3.png" class="img-fluid"></div>
+        
+          <img src="image3.jpeg" class="img-fluid" style="border-radius: 7px;box-shadow: 0 0 13px;">
+      </div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="container jumbotron bg-primary" class="img-fluid" style="  border-radius: 13px;box-shadow: 0 0 13px;">
+    <h1>Bootstrap Tutorial</h1>      
+    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+  </div>
+  </div>
+</div>
+<br>
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small indigo" >
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center" style="background-color:indigo;opacity: 0.85;">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: black;">imp Links</h5>
+
+        <ul class="list-unstyled" style="color: white;">
+            <li>
+            <a style="color: white;" href="#!">About US</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Contact Us</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Success story</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Services</a>
+          </li>
+          
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: black;">Ownshop</h5>
+
+        <ul class="list-unstyled" style="color: white;">
+            <li>
+            <a style="color: white;" href="#!">Jobs</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Term & condition</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Privacy Policy</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Our parteners</a>
+          </li>
+        
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: black;">Mazor Cities</h5>
+
+        <ul class="list-unstyled" style="color: white;">
+            <li>
+            <a style="color: white;" href="#!">Delhi</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Patna</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Amritsar</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Mumbai</a>
+          </li>
+        
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <h3 class="font-weight-bold text-uppercase mt-3 mb-4" style="color: black;">Contact Detail</h3>
+
+
+                                
+                                
+                                <h5 style="color: black;" class="title-median">Ownshop Pvt. Ltd.</h5>
+                                <p><b style="color: black;">Email id:</b> <a style="color: black;" href="mailto:info@webenlance.com">srjrnw3@gmail.com</a></p>
+                               <!--  <p><b>Helpline Numbers </b> -->
+
+    <b style="color:#ffc106;">(8AM to 10PM):</b><p style="color: black;">  8130890090, +91-8130190010  </p>
+    
+    <!-- <p><b>Corp Office / Postal Address</b></p> -->
+    <!-- <p><b>Phone Numbers : </b>7042827160, </p>
+    <p> 011-27568832, 9868387223</p> -->
+                                
+
+       <!--  <ul class="list-unstyled">
+          <li>
+            <a style="color: white;" href="#!">Link 1</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Link 2</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Link 3</a>
+          </li>
+          <li>
+            <a style="color: white;" href="#!">Link 4</a>
+          </li>
+        </ul> -->
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="background-color:indigo;color: black;">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/" style="color: white;">Ownshop.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<!-- Footer -->
+
+<!--  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+
+
+
+</body>
+</html>

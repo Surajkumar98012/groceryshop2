@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Grocery</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" initial-scale=1>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+     }
+    </style>  -->
+</head>
+<body style="background-color:grey">
+	<div class="container-fluid ">
+		<nav class="navbar navbar-expand-md bg-dark " >
+			<!-- brand logo -->
+			<a class="navbar-brand" href="#">
+				<img src="logo.png" alt="logo" width="50px" height="50px"  ></a>
+			<a class="navbar-brand" href="#" style="font-size: 22px;color:lightgreen	"><b>Grocery</b></a>
+			<ul class="navbar-nav ml-auto" >
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About</a>
+				</li>
+
+			</ul>
+
+		</nav>
+		
+	</div>
+	<div class="row ml-3 mr-auto">
+		
+		<div class="col-sm-3 bg-light ml-auto ">
+			<form class="form-inline mt-3" action="google.com">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
+		    <div class="dropdown mt-3 ">
+  
+                <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
+                  Categories
+                </button>
+
+                <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Food</a>
+                     <a class="dropdown-item" href="#">Beverages</a>
+                     <a class="dropdown-item" href="#">Snacks</a>
+                     <a class="dropdown-item" href="#">Dry fruits</a>
+                </div>
+                <div class="btn-group-vertical">
+                     <button type="button" class="btn btn-light">Top deals & offers</button>
+                     <button type="button" class="btn btn-light">Special offer pack</button>
+                     <button type="button" class="btn btn-light">Monthly collections </button>
+                     <button type="button" class="btn btn-light">Lockdown offers </button>
+                     <button type="button" class="btn btn-light">Daily vegetables subscription </button>
+                     <button type="button" class="btn btn-light">Top selling products </button>
+                     <button type="button" class="btn btn-light">Dairy products </button>
+                </div>
+
+            </div>
+            
+        </div>
+
+	
+	     <div class="col-sm-9 "  >
+
+	    	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                 <li data-target="#myCarousel" data-slide-to="1"></li>
+                 <li data-target="#myCarousel" data-slide-to="2"></li>
+                 <li data-target="#myCarousel" data-slide-to="3"></li>
+                 <li data-target="#myCarousel" data-slide-to="4"></li>
+             </ul>
+  
+             <!-- The slideshow -->
+            <div class="carousel-inner" style=".carousel-inner.img.{height: 100%;width: 100%}">
+                <div class="carousel-item active">
+                     <img class="d-block w-100" src="daily.jpg" alt="pickle" width="1000" height="450">
+                </div>
+                <div class="carousel-item ">
+                     <img class="d-block w-100" src="pickle.jpg" alt="organic" width="1000" height="450">
+                </div>
+                <div class="carousel-item ">
+                     <img class="d-block w-100" src="organic.jpg" alt="organic" width="1000" height="450">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="beverages.jpg" alt="beverages" width="1000" height="450">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="dry fruits.jpg" alt="dry fruits" width="1000" height="450">
+            </div>
+         </div>
+  
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              </a>
+         </div>
+ 
+		      
+	 </div>
+</div>
+<div class="row ml-3 mr-3">
+	<!-- <div class="col-3-sm  w-25">
+		
+	</div> -->
+	
+	<div class="col-sm-12 text-center mt-5">
+		<h1>Shops Nearby You</h1>
+	</div>
+	<hr>
+	<br>
+	<br>
+	<div class="card  ml-5 border-success rounded mb-3" style="color: red;width: 400px">
+		<img class="card-img-top" src="pickleshop.jpg" alt="shop1" style="width: 100%; height:8cm;" >
+		<div class="card-body">
+			<h3 class="card-title">Mom's pickles</h3>
+			<p class="card-text">Best quality traditional style homemade pickles.</p><br>
+			<a href="#" class="btn btn-primary stretched-link "> Visit Shop</a>
+		</div>
+	</div>
+	<div class="card ml-3 border-success rounded mb-3" style="color: blue;width: 400px">
+		<img class="card-img-top" src="beverages shop.png" alt="shop1" style="width: 100% ; height:8cm;" >
+		<div class="card-body">
+			<h3 class="card-title">Ram's Beverages</h3>
+			<p class="card-text">Coldrinks,juices and liquors</p><br>
+			<a href="#" class="btn btn-primary stretched-link"> Visit Shop</a>
+		</div>
+	</div>
+	<div class="card  ml-3 border-success rounded mb-3" style="color: green;width: 400px">
+		<img class="card-img-top" src="vegetable shop.jpg" alt="shop1" style="width: 100% ; height:8cm;" >
+		<div class="card-body">
+			<h3 class="card-title">vegetables & fruits</h3>
+			<p class="card-text">Fresh and healthy fruits and vegetables. Only for Amritsar area</p>
+			<a href="#" class="btn btn-primary stretched-link"> Visit Shop</a>
+		</div>
+	</div>
+	<div class="card  ml-5 border-success rounded mb-3" style="color: purple; width: 400px">
+		<img class="card-img-top" src="dryfruits shop.jpg" alt="shop1" style="width: 100% ; height:8cm;" >
+		<div class="card-body">
+			<h3 class="card-title">Verka Dry fruits</h3>
+			<p class="card-text">All kind of dry fruits</p><br>
+			<a href="#" class="btn btn-primary stretched-link"> Visit Shop</a>
+		</div>
+	</div>
+	<div class="card  ml-3 border-success rounded mb-3" style=" color: skyblue;width: 400px">
+		<img class="card-img-top" src="rice shop.jpg" alt="shop1" style="width: 100% ; height:8cm;" >
+		<div class="card-body">
+			<h3 class="card-title">Manish Grains</h3>
+			<p class="card-text">Every kinds of rice,cerals,and other daily products are available here</p>
+			<a href="#" class="btn btn-primary stretched-link"> Visit Shop</a>
+		</div>
+	</div>
+	<div class="card  ml-3 border-success rounded mb-3" style="width: 400px; color: orange">
+		<img class="card-img-top" src="spices.jpg" alt="shop1" style="width: 100% ; height:8cm;" >
+		<div class="card-body">
+			<h3 class="card-title">Indian spices</h3>
+			<p class="card-text">All kind of spices are available here.</p><br>
+			<a href="#" class="btn btn-primary stretched-link"> Visit Shop</a>
+		</div>
+	</div>
+	
+
+
+</div>
+
+</body>
+</html>
